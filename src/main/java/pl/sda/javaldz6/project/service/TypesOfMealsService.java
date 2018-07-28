@@ -6,19 +6,13 @@ import java.util.List;
 
 public interface TypesOfMealsService {
 
-
-
     void addTypeOfMeal(String name);
 
-    TypesOfMeals getTypeOfMealById(int index);
+    TypesOfMeals getTypeOfMealById(long typesOfMealsId);
 
-    TypesOfMeals modifyTypeOfMeal(int index, TypesOfMeals typeOfMeal);
+    TypesOfMeals modifyTypeOfMeal(TypesOfMeals typeOfMeal);
 
-    boolean deleteTypeOfMeal(int index);
-
-    void init();
-
-    void close();
+    boolean deleteTypeOfMeal(long typesOfMealsId);
 
     List<TypesOfMeals> getAll();
 

@@ -5,17 +5,14 @@ import pl.sda.javaldz6.project.model.Continent;
 import java.util.List;
 
 public interface ContinentService {
+
     void addContinent(String name);
 
-    Continent getContinentById(int index);
+    Continent getContinentById(long continentId);
 
-    Continent modifyContinent(int index, Continent continent);
+    Continent modifyContinent(Continent continent);
 
-    boolean deleteContinent(int index);
-
-    void init();
-
-    void close();
+    boolean deleteContinent(long continentId);
 
     List<Continent> getAll();
 

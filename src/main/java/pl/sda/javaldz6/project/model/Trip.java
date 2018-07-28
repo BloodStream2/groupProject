@@ -32,6 +32,7 @@ public class Trip {
     private double priceForAdult;
     private double priceForChild;
     private double promotion;
-    private int countOfPerson;
+    private int countOfAdults;
+    private int countOfChildren;
     private String description;
 }

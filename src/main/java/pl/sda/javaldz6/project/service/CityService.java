@@ -6,17 +6,13 @@ import java.util.List;
 
 public interface CityService {
 
-    void addCity(String name);
+    void addCity(String name, long countryId);
 
-    City getCityById(int index);
+    City getCityById(long cityId);
 
-    City modifyCity(int index, City city);
+    City modifyCity(City city);
 
-    boolean deleteCity(int index);
-
-    void init();
-
-    void close();
+    boolean deleteCity(long cityId);
 
     List<City> getAll();
 

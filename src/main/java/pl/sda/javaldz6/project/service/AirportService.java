@@ -7,18 +7,13 @@ import java.util.List;
 
 public interface AirportService {
 
+    void addAirport(String name, long cityId);
 
-    void addAirport(String name);
+    Airport getAirportById(long airportId);
 
-    Airport getAirportById(int index);
+    Airport modifyAirport(Airport airport);
 
-    Airport modifyAirport(int index, Airport airport);
-
-    boolean deleteAirport(int index);
-
-    void init();
-
-    void close();
+    boolean deleteAirport(long airportId);
 
     List<Airport> getAll();
 

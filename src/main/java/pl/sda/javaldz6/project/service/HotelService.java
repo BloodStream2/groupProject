@@ -6,18 +6,13 @@ import java.util.List;
 
 public interface HotelService {
 
+    void addHotel(String name, long cityId);
 
-    void addHotel(String name);
+    Hotel getHotelById(long hotelId);
 
-    Hotel getHotelById(int index);
+    Hotel modifyHotel(Hotel hotel);
 
-    Hotel modifyHotel(int index, Hotel hotel);
-
-    boolean deleteHotel(int index);
-
-    void init();
-
-    void close();
+    boolean deleteHotel(long hotelId);
 
     List<Hotel> getAll();
 

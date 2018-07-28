@@ -5,17 +5,14 @@ import pl.sda.javaldz6.project.model.Country;
 import java.util.List;
 
 public interface CountryService {
-    void addCountry(String name);
 
-    Country getCountryById(int index);
+    void addCountry(String name, long continentId);
 
-    Country modifyCountry(int index, Country country);
+    Country getCountryById(long countryId);
 
-    boolean deleteCountry(int index);
+    Country modifyCountry(Country country);
 
-    void init();
-
-    void close();
+    boolean deleteCountry(long countryId);
 
     List<Country> getAll();
 

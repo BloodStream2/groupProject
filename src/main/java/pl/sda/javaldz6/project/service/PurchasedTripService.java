@@ -1,23 +1,19 @@
 package pl.sda.javaldz6.project.service;
 
 import pl.sda.javaldz6.project.model.PurchasedTrip;
+import pl.sda.javaldz6.project.model.Trip;
 
 import java.util.List;
 
 public interface PurchasedTripService {
 
+    void addPurchasedTrip(long tripId, double amount, String owner);
 
-    void addPurchasedTrip(String name);
+    PurchasedTrip getPurchasedTripById(long purchasedTripId);
 
-    PurchasedTrip getPurchasedTripById(int index);
+    PurchasedTrip modifyPurchasedTrip(PurchasedTrip purchasedTrip);
 
-    PurchasedTrip modifyPurchasedTrip(int index, PurchasedTrip purchasedTrip);
-
-    boolean deletePurchasedTrip(int index);
-
-    void init();
-
-    void close();
+    boolean deletePurchasedTrip(long purchasedTripId);
 
     List<PurchasedTrip> getAll();
 
