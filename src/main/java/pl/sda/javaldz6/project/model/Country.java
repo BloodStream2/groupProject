@@ -16,4 +16,9 @@ public class Country {
     @ManyToOne
     @JoinColumn(name = "continentId", nullable = false)
     private Continent continentId;
+
+    public Country(String name, Continent continent) {
+        this.name=name;
+        this.continentId=continent;
+    }
 }

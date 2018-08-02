@@ -16,5 +16,4 @@ public interface CityService {
 
     List<City> getAll();
 
-    City getRestCity();
 }

@@ -15,4 +15,10 @@ public class PurchasedTrip {
     private Trip trip;
     private double amount;
     private String owner;
+
+    public PurchasedTrip(Trip trip, double amount, String owner) {
+        this.trip=trip;
+        this.amount=amount;
+        this.owner=owner;
+    }
 }

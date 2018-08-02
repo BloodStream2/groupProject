@@ -16,4 +16,9 @@ public class City {
     @ManyToOne
     @JoinColumn(name = "countryId", nullable = false)
     private Country countryId;
+
+    public City(String name, Country country) {
+        this.name=name;
+        this.countryId=country;
+    }
 }

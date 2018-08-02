@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface TypesOfMealsService {
 
-    void addTypeOfMeal(String name);
+    void addTypeOfMeal(String name, String description);
 
     TypesOfMeals getTypeOfMealById(long typesOfMealsId);
 
@@ -16,5 +16,4 @@ public interface TypesOfMealsService {
 
     List<TypesOfMeals> getAll();
 
-    TypesOfMeals getRestTypeOfMeal();
 }

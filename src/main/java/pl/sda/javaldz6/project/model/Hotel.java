@@ -18,4 +18,12 @@ public class Hotel {
     @ManyToOne
     @JoinColumn(name = "cityId", nullable = false)
     private City cityId;
+
+
+    public Hotel(String name, double standard, String desctiption, City city) {
+        this.name = name;
+        this.standard = standard;
+        this.description = desctiption;
+        this.cityId = city;
+    }
 }

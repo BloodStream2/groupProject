@@ -35,4 +35,21 @@ public class Trip {
     private int countOfAdults;
     private int countOfChildren;
     private String description;
+
+    public Trip(Trip trip) {
+        this.airportFrom=trip.getAirportFrom();
+        this.airportTo=trip.getAirportTo();
+        this.hotelTo=trip.getHotelTo();
+        this.cityTo=trip.getCityTo();
+        this.departureDate=trip.getDepartureDate();
+        this.returnDate=trip.getReturnDate();
+        this.countOfDays=trip.getCountOfDays();
+        this.typeOfMeal=trip.getTypeOfMeal();
+        this.priceForAdult=trip.getPriceForAdult();
+        this.priceForChild=trip.getPriceForChild();
+        this.promotion=trip.getPromotion();
+        this.countOfAdults=trip.getCountOfAdults();
+        this.countOfChildren=trip.getCountOfChildren();
+        this.description=trip.getDescription();
+    }
 }

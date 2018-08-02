@@ -16,5 +16,4 @@ public interface ContinentService {
 
     List<Continent> getAll();
 
-    Continent getRestContinent();
 }

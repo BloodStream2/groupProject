@@ -14,4 +14,9 @@ public class Airport {
     @ManyToOne
     @JoinColumn(name = "cityId", nullable = false)
     private City cityId;
+
+    public Airport(String name, City city) {
+        this.name = name;
+        this.cityId = city;
+    }
 }

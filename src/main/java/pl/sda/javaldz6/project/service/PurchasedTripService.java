@@ -16,6 +16,4 @@ public interface PurchasedTripService {
     boolean deletePurchasedTrip(long purchasedTripId);
 
     List<PurchasedTrip> getAll();
-
-    PurchasedTrip getRestPurchasedTrip();
 }

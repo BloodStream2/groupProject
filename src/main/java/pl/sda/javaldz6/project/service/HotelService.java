@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface HotelService {
 
-    void addHotel(String name, long cityId);
+    void addHotel(String name, double standard, String desctiption, long cityId);
 
     Hotel getHotelById(long hotelId);
 
@@ -16,5 +16,4 @@ public interface HotelService {
 
     List<Hotel> getAll();
 
-    Hotel getRestHotel();
 }

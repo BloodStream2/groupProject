@@ -17,5 +17,4 @@ public interface AirportService {
 
     List<Airport> getAll();
 
-    Airport getRestAirport();
 }

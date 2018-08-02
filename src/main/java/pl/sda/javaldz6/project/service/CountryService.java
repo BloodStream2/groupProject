@@ -16,5 +16,4 @@ public interface CountryService {
 
     List<Country> getAll();
 
-    Country getRestCountry();
 }
