@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import pl.sda.javaldz6.project.model.Trip;
+import pl.sda.javaldz6.project.model.TripQueryParams;
 import pl.sda.javaldz6.project.service.TripService;
 
 import java.util.List;
@@ -37,6 +38,12 @@ public class TripController {
     public ResponseEntity<Void> deleteTrip(@PathVariable(name = "id") long tripId){
         Boolean trip = tripService.deleteTrip(tripId);
         return ResponseEntity.status(200).build();
+    }
+
+    @PostMapping("/getByParam")
+    public ResponseEntity<List<Trip>> getTripsByParam(@RequestBody TripQueryParams params){
+        List<Trip> tripList = tripService.getTripsByParam(params);
+        return ResponseEntity.ok(tripList);
     }
 
     @GetMapping("/getAll")
